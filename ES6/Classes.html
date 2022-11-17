@@ -5,21 +5,19 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  <body>
-
-    <div id="mydiv"></div>
-
-    <script type="text/babel">
-        class Car {
+<body>
+  
+<script>
+class Car {
   constructor(name) {
     this.brand = name;
   }
 }
-  const mycar = new Car("Ford");
-   
 
-      ReactDOM.render(<Classes />, document.getElementById('mydiv'))
-    </script>
+const mycar = new Car("Marcedes");
 
-  </body>
+document.write(mycar.brand);
+</script>
+
+</body>
 </html>

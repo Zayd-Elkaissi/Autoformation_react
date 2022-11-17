@@ -4,18 +4,61 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/babel" src="app.js"></script>
   </head>
   <body>
 
-    <div id="mydiv"></div>
 
-    <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World!</h1>;
-      }
+    <!-- <script type="text/babel">
+      function MissedGoal() {
+	return <h1>MISSED!</h1>;
+}
 
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
-    </script>
+function MadeGoal() {
+	return <h1>GOAL!</h1>;
+}
 
+function Goal(props) {
+  const isGoal = props.isGoal;
+  if (isGoal) {
+    return <MadeGoal/>;
+  }
+  return <MissedGoal/>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Goal isGoal={1} />);
+    </script> -->
+    
+    <!-- <script type="text/babel">
+      function MissedGoal() {
+	return <h1>MISSED!</h1>;
+}
+
+function MadeGoal() {
+	return <h1>GOAL!</h1>;
+}
+
+function Goal(props) {
+  const isGoal = props.isGoal;
+	return (
+		<>
+			{ isGoal ? <MadeGoal/> : <MissedGoal/> }
+		</>
+	);
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Goal isGoal={false} />);
+    </script>  -->
+
+
+
+
+
+
+    <div id="root"></div>
+    <script type="text/babel" src="index.js"></script>
   </body>
 </html>
